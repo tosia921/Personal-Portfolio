@@ -1,5 +1,35 @@
+@import "../../global-styles/variables.scss";
+
 .nav {
-	height: 5rem;
-	padding: 0 calc((100vw - 1200px) / 2);
-	background-color: aquamarine;
+	height: 10rem;
+	display: flex;
+	background: transparent;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo {
+		font-size: 3.7rem;
+		color: $primary-text-color;
+		text-shadow: $primary-text-shadow;
+
+		span {
+			color: $secondary-text-color;
+		}
+	}
+
+	.menu {
+		ul {
+			display: flex;
+
+			li {
+				font-size: 2.3rem;
+				color: $primary-text-color;
+				text-shadow: $primary-text-shadow;
+			}
+
+			li:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+	}
 }

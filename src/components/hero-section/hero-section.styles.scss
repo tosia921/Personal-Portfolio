@@ -1,4 +1,90 @@
+@import "../../global-styles/variables.scss";
+
 .hero-section {
-	height: 100vh;
+	min-height: 98vh;
 	padding: 0 calc((100vw - 1200px) / 2);
+	background: $primary-background-color;
+	background: $primary-radial-gradient;
+	position: relative;
+
+	.content-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-top: 3rem;
+
+		.content {
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			letter-spacing: 1.5px;
+			z-index: 10;
+			p {
+				font-size: 3.5rem;
+				color: $secondary-text-color;
+				text-shadow: $primary-text-shadow;
+				margin-bottom: 1.5rem;
+			}
+			h1 {
+				font-size: 10rem;
+				color: $primary-text-color;
+				text-shadow: $primary-text-shadow;
+
+				&.big {
+					font-size: 12rem;
+					margin-top: -1rem;
+					margin-bottom: 3rem;
+				}
+			}
+		}
+	}
+
+	.my-photo {
+		height: 75rem;
+		width: 37rem;
+		background-image: url("../../assets/MyPhotoPNG.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 83%;
+		transform: translate(0, -80%);
+		right: calc((100vw - 1200px) / 2);
+		z-index: 10;
+	}
+
+	.path-1 {
+		position: absolute;
+		left: -3px;
+		bottom: 15rem;
+	}
+
+	.path-2 {
+		position: absolute;
+		left: -50px;
+		top: -200px;
+	}
+}
+
+.custom-shape-divider-bottom-1612993316 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	z-index: 10;
+}
+
+.custom-shape-divider-bottom-1612993316 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 144px;
+	filter: drop-shadow(-2px -2px 10px rgba(0, 0, 0, 0.7));
+	margin-top: 30px;
+}
+
+.custom-shape-divider-bottom-1612993316 .shape-fill {
+	fill: $secondary-background-color;
 }
