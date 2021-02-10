@@ -1,11 +1,21 @@
 import './global-styles/App.scss';
+//react router dom
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//components
+import HomePage from './pages/homepage/hompage.component';
+import Header from './components/header/header.component';
 
 function App() {
   return (
-    <div>
-      <h1>TOMEK</h1>
-    </div>
-  );
+    <Router>
+      <Header/>
+      <Switch>
+        <Route exact path="/">
+          <HomePage/>
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;
