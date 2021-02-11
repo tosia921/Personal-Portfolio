@@ -6,6 +6,8 @@
 	background: transparent;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	z-index: 10;
 
 	.logo {
 		font-size: 3.7rem;

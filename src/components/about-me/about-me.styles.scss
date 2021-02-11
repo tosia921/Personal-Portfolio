@@ -1,7 +1,103 @@
 @import "../../global-styles/variables.scss";
 
 .about-me {
-	height: 500rem;
-	padding: 0 calc((100vw - 1200px) / 2);
+	height: fit-content;
+	padding: 5rem calc((100vw - 1200px) / 2) 25rem;
 	background-color: $secondary-background-color;
+	position: relative;
+	display: flex;
+
+	.grid-content-container {
+		width: 50%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+		gap: 3rem 3rem;
+		grid-template-areas:
+			"grid-area-1"
+			"grid-area-2"
+			"grid-area-3"
+			"grid-area-4"
+			"grid-area-5";
+
+		.section-title {
+			font-size: 5rem;
+			color: $primary-text-color;
+			text-shadow: $primary-text-shadow;
+			span {
+				color: $secondary-text-color;
+			}
+		}
+
+		.content-area {
+			width: 80%;
+			height: 100%;
+			h3 {
+				font-size: 3rem;
+				color: $secondary-text-color;
+				text-shadow: $primary-text-shadow;
+				margin-bottom: 1rem;
+			}
+			p {
+				font-size: 2rem;
+				color: $primary-text-color;
+				text-shadow: $primary-text-shadow;
+			}
+		}
+		.grid-area-1 {
+			grid-area: grid-area-1;
+		}
+		.grid-area-2 {
+			grid-area: grid-area-2;
+		}
+		.grid-area-3 {
+			grid-area: grid-area-3;
+		}
+		.grid-area-4 {
+			grid-area: grid-area-4;
+		}
+		.grid-area-5 {
+			grid-area: grid-area-5;
+		}
+	}
+	.grid-icons-container {
+		width: 50%;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 3rem 3rem;
+		grid-template-areas:
+			"grid-icon-1 grid-icon-2 grid-icon-3"
+			"grid-icon-4 grid-icon-5 grid-icon-6"
+			"grid-icon-7 grid-icon-8 grid-icon-9";
+		.react-icon {
+			grid-area: grid-icon-1;
+		}
+		.npm-icon {
+			grid-area: grid-icon-1;
+		}
+		.github-icon {
+			grid-area: grid-icon-1;
+		}
+		.javascript-icon {
+			grid-area: grid-icon-1;
+		}
+		.git-icon {
+			grid-area: grid-icon-1;
+		}
+		.sass-icon {
+			grid-area: grid-icon-1;
+		}
+		.css3-icon {
+			grid-area: grid-icon-1;
+		}
+		.html5-icon {
+			grid-area: grid-icon-1;
+		}
+		.react-icon {
+			grid-area: grid-icon-1;
+		}
+	}
 }

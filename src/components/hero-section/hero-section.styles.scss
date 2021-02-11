@@ -6,6 +6,7 @@
 	background: $primary-background-color;
 	background: $primary-radial-gradient;
 	position: relative;
+	overflow: hidden;
 
 	.content-container {
 		display: flex;
@@ -57,34 +58,14 @@
 		position: absolute;
 		left: -3px;
 		bottom: 15rem;
+		height: 81rem;
+		z-index: 1;
 	}
 
 	.path-2 {
 		position: absolute;
 		left: -50px;
 		top: -200px;
+		height: 80rem;
 	}
-}
-
-.custom-shape-divider-bottom-1612993316 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	z-index: 10;
-}
-
-.custom-shape-divider-bottom-1612993316 svg {
-	position: relative;
-	display: block;
-	width: calc(100% + 1.3px);
-	height: 144px;
-	filter: drop-shadow(-2px -2px 10px rgba(0, 0, 0, 0.7));
-	margin-top: 30px;
-}
-
-.custom-shape-divider-bottom-1612993316 .shape-fill {
-	fill: $secondary-background-color;
 }

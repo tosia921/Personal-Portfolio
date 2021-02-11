@@ -1,0 +1,19 @@
+.circle-container {
+	position: relative;
+	height: 10rem;
+	width: 10rem;
+
+	.circle {
+		height: 99%;
+		width: 99%;
+	}
+
+	.icon-inside {
+		height: 50%;
+		width: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
