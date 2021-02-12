@@ -1,0 +1,89 @@
+@import "../../global-styles/variables.scss";
+
+.projects-section {
+	height: 100rem;
+	padding: 5rem calc((100vw - 1200px) / 2) 25rem;
+	background-color: $primary-background-color;
+	position: relative;
+
+	h2 {
+		font-size: 5rem;
+		color: $primary-text-color;
+		text-shadow: $primary-text-shadow;
+		margin-bottom: 1rem;
+
+		span {
+			color: $secondary-text-color;
+		}
+	}
+
+	p {
+		font-size: 2rem;
+		color: $dark-gray-color;
+		text-shadow: $primary-text-shadow;
+	}
+
+	.grid-container {
+		display: grid;
+		margin-top: 5rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 30rem 30rem;
+		gap: 3em 3em;
+		grid-template-areas:
+			"ztmProject project-2"
+			"project-3 project-4";
+
+		.e-commerce-ztm {
+			height: 100%;
+			width: 100%;
+			grid-area: ztmProject;
+			background-image: url("../../assets/clommerceAppPhoto.png");
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid black;
+			box-shadow: 2px 2px 5px black;
+		}
+		.project-2 {
+			height: 100%;
+			width: 100%;
+			grid-area: project-2;
+			background-image: url("../../assets/clommerceAppPhoto.png");
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid black;
+			box-shadow: 2px 2px 5px black;
+		}
+		.project-3 {
+			height: 100%;
+			width: 100%;
+			grid-area: project-3;
+			background-image: url("../../assets/clommerceAppPhoto.png");
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid black;
+			box-shadow: 2px 2px 5px black;
+		}
+		.project-4 {
+			height: 100%;
+			width: 100%;
+			grid-area: project-4;
+			background-image: url("../../assets/clommerceAppPhoto.png");
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid black;
+			box-shadow: 2px 2px 5px black;
+		}
+	}
+}

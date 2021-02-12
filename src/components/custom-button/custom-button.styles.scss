@@ -14,19 +14,28 @@
 
 	&:hover {
 		color: rgb(32, 32, 32);
-		background: rgb(187, 187, 187);
+		background: $primary-text-color;
 		border: 3px solid rgb(12, 12, 12);
 		box-shadow: 2px 7px 12px 5px #000000;
-		transform: translateY(-5px);
 	}
 	&:active,
 	&:focus {
 		color: rgb(32, 32, 32);
-		background: rgb(187, 187, 187);
+		background: $primary-text-color;
 		border: 3px solid rgb(12, 12, 12);
 		box-shadow: 2px 7px 12px 5px #000000;
-		transform: translateY(0px);
 		outline: none;
 		box-shadow: 2px 5px 10px 3px #000000;
 	}
+
+	.eye-icon {
+		fill: $primary-text-color;
+		height: 2rem;
+		width: auto;
+	}
+}
+.center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
