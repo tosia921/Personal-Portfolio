@@ -1,0 +1,11 @@
+@import "../../global-styles/variables.scss";
+
+.footer {
+	padding: 3rem 3rem;
+	background-color: $secondary-background-color;
+	color: $primary-text-color;
+	text-shadow: $primary-text-shadow;
+	flex-shrink: 0;
+	max-width: 100%;
+	z-index: 50;
+}

@@ -1,8 +1,8 @@
 @import "../../global-styles/variables.scss";
 
 .projects-section {
-	height: 100rem;
-	padding: 5rem calc((100vw - 1200px) / 2) 25rem;
+	height: fit-content;
+	padding: 5rem calc((100vw - 1200px) / 2) 35rem;
 	background-color: $primary-background-color;
 	position: relative;
 

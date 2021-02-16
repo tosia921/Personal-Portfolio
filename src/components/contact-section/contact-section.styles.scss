@@ -1,0 +1,32 @@
+@import "../../global-styles/variables.scss";
+
+.contact-section {
+	height: fit-content;
+	padding: 5rem calc((100vw - 1200px) / 2) 25rem;
+	background-color: $secondary-background-color;
+	position: relative;
+
+	.section-title {
+		font-size: 5rem;
+		color: $primary-text-color;
+		text-shadow: $primary-text-shadow;
+		span {
+			color: $secondary-text-color;
+		}
+	}
+
+	.contact-section-message {
+		font-size: 2rem;
+		color: $dark-gray-color;
+		text-shadow: $primary-text-shadow;
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+	}
+
+	.form-container form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
