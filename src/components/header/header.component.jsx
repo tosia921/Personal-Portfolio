@@ -1,17 +1,19 @@
 import React from 'react';
 //styles
 import './header.styles.scss';
+//react router dom
+import { NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({backgroundSecondary}) => {
     return (
-        <nav className='nav'>
+        <nav className={`${backgroundSecondary ? 'nav nav-background-secondary' : 'nav'}`}>
             <div className='logo'>Portfo<span>lio.</span></div>
             <menu className='menu'>
                 <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <NavLink to='/' className='header-link' activeStyle={{color: "#fec576"}} exact>Home</NavLink>
+                    <NavLink to='/' className='header-link'>About Me</NavLink>
+                    <NavLink to='/projects' className='header-link' activeStyle={{color: "#fec576"}} exact>Projects</NavLink>
+                    <NavLink to='/' className='header-link'>Contact</NavLink>
                 </ul>
             </menu>
         </nav>
@@ -19,3 +21,4 @@ const Header = () => {
 }
 
 export default Header;
+

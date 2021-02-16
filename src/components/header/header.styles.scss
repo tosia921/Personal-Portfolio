@@ -23,15 +23,20 @@
 		ul {
 			display: flex;
 
-			li {
+			.header-link {
 				font-size: 2.3rem;
 				color: $primary-text-color;
 				text-shadow: $primary-text-shadow;
+				text-decoration: none;
 			}
 
-			li:not(:last-child) {
+			.header-link:not(:last-child) {
 				margin-right: 2rem;
 			}
 		}
 	}
+}
+.nav-background-secondary {
+	background: $primary-background-color;
+	padding: 0 calc((100vw - 1200px) / 2);
 }
