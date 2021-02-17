@@ -2,10 +2,46 @@
 
 .footer {
 	padding: 3rem 3rem;
-	background-color: $secondary-background-color;
+	background-color: $primary-background-color;
 	color: $primary-text-color;
 	text-shadow: $primary-text-shadow;
 	flex-shrink: 0;
 	max-width: 100%;
 	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 8rem;
+
+	.line-throught {
+		width: 70%;
+		height: 1px;
+		background-color: $primary-text-color;
+		box-shadow: 2px 2px 0px 5px rgba(0, 0, 0, 0.1);
+		margin-bottom: 2rem;
+	}
+
+	.footer-menu-list {
+		display: flex;
+		.footer-link {
+			font-size: 2.3rem;
+			color: $primary-text-color;
+			text-shadow: $primary-text-shadow;
+			text-decoration: none;
+
+			&:hover {
+				color: $secondary-text-color;
+			}
+		}
+		.footer-link:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+}
+.background-secondary {
+	background-color: $secondary-background-color;
+}
+.margin-top {
+	margin-top: 2rem;
 }

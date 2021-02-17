@@ -8,12 +8,12 @@ import ProjectsSection from '../../components/projects-section/projects-section.
 
 const ProjectsPage = () => {
     return (
-        <section className='projects-page'>
-            <div className='projects-page-content'>
-                <Header backgroundSecondary/>
+        <section>
+            <div>
+                <Header backgroundPrimary/>
                 <ProjectsSection/>
             </div>
-            <Footer/>
+            <Footer backgroundSecondary/>
         </section>
     )
 }

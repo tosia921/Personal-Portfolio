@@ -28,6 +28,9 @@
 				color: $primary-text-color;
 				text-shadow: $primary-text-shadow;
 				text-decoration: none;
+				&:hover {
+					color: $secondary-text-color;
+				}
 			}
 
 			.header-link:not(:last-child) {
@@ -37,6 +40,11 @@
 	}
 }
 .nav-background-secondary {
+	background: $secondary-background-color;
+	padding: 0 calc((100vw - 1200px) / 2);
+}
+
+.nav-background-primary {
 	background: $primary-background-color;
 	padding: 0 calc((100vw - 1200px) / 2);
 }
