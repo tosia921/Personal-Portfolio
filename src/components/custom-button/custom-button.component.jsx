@@ -10,7 +10,7 @@ const CustomButton = ({text, center, eye, code, isLink, LinkTo, ...otherProps}) 
     return (
         isLink
         ?
-        <Link className='link-to-project' to={{pathname: `${LinkTo}` }}target="_blank" >
+        <Link className='link-to-project' to={{pathname: `${LinkTo}` }} target="_blank" >
         <button className={center ? 'custom-button center' : 'custom-button'}{...otherProps}>
             {eye && <EyeIcon className='eye-icon'/>}
             {code && <CodeIcon className='code-icon' />}

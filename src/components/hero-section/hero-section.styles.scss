@@ -20,7 +20,7 @@
 			top: 50%;
 			transform: translate(0, -50%);
 			letter-spacing: 1.5px;
-			z-index: 10;
+
 			p {
 				font-size: 3.5rem;
 				color: $secondary-text-color;
@@ -59,7 +59,6 @@
 		left: -3px;
 		bottom: 15rem;
 		height: 81rem;
-		z-index: 1;
 	}
 
 	.path-2 {
@@ -67,5 +66,12 @@
 		left: -50px;
 		top: -200px;
 		height: 80rem;
+	}
+
+	.fixed-links {
+		position: fixed;
+		top: 50%;
+		left: -9.5rem;
+		z-index: 1000;
 	}
 }

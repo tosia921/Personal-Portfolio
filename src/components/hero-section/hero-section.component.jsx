@@ -5,9 +5,13 @@ import './hero-section.styles.scss'
 import Header from '../header/header.component';
 import CustomButton from '../custom-button/custom-button.component';
 import SectionWave from '../section-wave/section-wave.component';
+import GithubLink from '../github-link/github-link.component';
+import LinkedInLink from '../linkedin-link/linkedin-link.component';
+import ResumeLink from '../resume-link/resume-link.component';
 //animated svg paths
 import { ReactComponent as Path1 } from '../../assets/PATH FIRST.svg';
 import { ReactComponent as Path2 } from '../../assets/PATH SECOND.svg';
+
 
 
 const HeroSection = () => {
@@ -24,9 +28,12 @@ const HeroSection = () => {
                 </div>
                 <div className='my-photo'/>
             </div>
+            <div className='fixed-links'>
+                <GithubLink hoverRight />
+                <LinkedInLink hoverRight />
+                <ResumeLink hoverRight />
+            </div>
             <SectionWave />
-            <Path1 className='path-1'/>
-            <Path2 className='path-2'/>
         </section>
     )
 }

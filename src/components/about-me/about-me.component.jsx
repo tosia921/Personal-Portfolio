@@ -7,7 +7,6 @@ import { AnimatedReactIcon, AnimatedNpmIcon, AnimatedGatsbyIcon, AnimatedGitHubI
 import SectionWave from '../section-wave/section-wave.component';
 import ProfficientWithArrow from '../profficient-with-arrow/profficient-with-arrow.component';
 
-
 const AboutMe = () => {
     return (
         <section className='about-me'>
