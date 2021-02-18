@@ -18,6 +18,7 @@ const HeroSection = () => {
     return (
         <section className='hero-section'>
             <Header/>
+            
             <div className='content-container'>
                 <div className='content'>
                     <p>hello, I'm</p>
@@ -28,12 +29,14 @@ const HeroSection = () => {
                 </div>
                 <div className='my-photo'/>
             </div>
+            
+            
+            <SectionWave />
             <div className='fixed-links'>
                 <GithubLink hoverRight />
                 <LinkedInLink hoverRight />
                 <ResumeLink hoverRight />
             </div>
-            <SectionWave />
         </section>
     )
 }

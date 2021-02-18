@@ -4,9 +4,9 @@
 	color: $primary-text-color;
 
 	.github-link-container {
-		width: 14rem;
-		height: 7rem;
-		padding: 0 2rem;
+		width: 13rem;
+		height: 6rem;
+		padding: 0 1rem;
 		background-color: #222326;
 		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 		display: flex;
@@ -15,13 +15,13 @@
 		transition: transform 0.3s ease-in;
 
 		.github-link-content {
-			font-size: 2.5rem;
+			font-size: 2rem;
 			text-decoration: none;
 		}
 
 		.github-logo {
-			height: 4.5rem;
-			width: 4.5rem;
+			height: 3.5rem;
+			width: 3.5rem;
 		}
 	}
 	.hover-right {
