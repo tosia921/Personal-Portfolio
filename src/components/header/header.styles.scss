@@ -3,11 +3,14 @@
 .nav {
 	height: 10rem;
 	display: flex;
-	background: transparent;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	background: transparent;
 	z-index: 20;
+	padding: 0 calc((100vw - 1200px) / 2);
+	@media screen and (max-width: 1220px) {
+		padding: 0 10rem;
+	}
 
 	.logo {
 		font-size: 3.7rem;
@@ -22,6 +25,9 @@
 	.menu {
 		ul {
 			display: flex;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
 
 			.header-link {
 				font-size: 2.3rem;
@@ -31,20 +37,41 @@
 				&:hover {
 					color: $secondary-text-color;
 				}
+
+				@media screen and (max-width: 768px) {
+					font-size: 4rem;
+				}
+
+				&:not(:last-child) {
+					margin-right: 2rem;
+
+					@media screen and (max-width: 768px) {
+						margin-right: 0;
+						margin-bottom: 3rem;
+					}
+				}
 			}
 
-			.header-link:not(:last-child) {
-				margin-right: 2rem;
+			&.hidden {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 50rem;
+				width: 40rem;
+				background-color: gray;
+				z-index: 10;
 			}
 		}
 	}
 }
 .nav-background-secondary {
 	background: $secondary-background-color;
-	padding: 0 calc((100vw - 1200px) / 2);
 }
 
 .nav-background-primary {
 	background: $primary-background-color;
-	padding: 0 calc((100vw - 1200px) / 2);
 }

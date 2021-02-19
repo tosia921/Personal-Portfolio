@@ -10,12 +10,9 @@ import ProfficientWithArrow from '../profficient-with-arrow/profficient-with-arr
 const AboutMe = () => {
     return (
         <section className='about-me'>
-            <div className='title-and-arrow'>
                 <div className='section-title'>
                     <h2>About <span>Me</span></h2>
                 </div>
-                <ProfficientWithArrow className='text-and-arrow'/>
-            </div>
             <div className='grids'>
                 <div className='grid-content-container'>
                     <div className='content-area grid-area-2'>
@@ -35,7 +32,9 @@ const AboutMe = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
+                
                 <div className='grid-icons-container'>
+                    <ProfficientWithArrow className='text-and-arrow'/>
                     <AnimatedReactIcon className='react-icon'/>
                     <AnimatedNpmIcon className='npm-icon'/>
                     <AnimatedGatsbyIcon className='gatsby-icon'/>
@@ -46,6 +45,7 @@ const AboutMe = () => {
                     <AnimatedCss3Icon className='css3-icon'/>
                     <AnimatedHtml5Icon className='html5-icon'/>
                 </div>
+                
             </div>
             <SectionWave secondary/>
         </section>

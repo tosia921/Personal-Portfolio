@@ -31,7 +31,6 @@ const ProjectsSection = () => {
                     <CustomButton text='View Project'/>
                 </div>
             </div>
-            <CustomButton center text='SEE ALL' />
 
             <ECommerceZTM showZtmProject={showZtmProject} setZtmProject={setZtmProject}/>
 

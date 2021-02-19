@@ -3,6 +3,12 @@
 .profficient-with-arrow {
 	display: flex;
 	position: relative;
+	grid-area: text-and-arrow;
+	justify-self: right;
+	@media screen and (max-width: 768px) {
+		justify-self: right;
+		margin-bottom: 3rem;
+	}
 	p {
 		font-family: "Permanent Marker", sans-serif;
 		font-size: 2.5rem;

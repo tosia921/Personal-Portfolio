@@ -1,24 +1,30 @@
 @import "../../global-styles/variables.scss";
 
 .hero-section {
-	min-height: 98vh;
-	padding: 0 calc((100vw - 1200px) / 2);
-	@media screen and (max-width: 1250px) {
-		padding: 0 10rem;
-	}
+	min-height: 97vh;
 
 	background: $primary-background-color;
 	background: $primary-radial-gradient;
 	position: relative;
 	overflow: hidden;
+	z-index: 500;
+	
+	@media screen and (max-width: 768px) {
+		padding-top: 1rem;
+	}
 
 	.content-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		
+		
+		padding-left: calc((100vw - 1200px) / 2);
+		@media screen and (max-width: 1350px) {
+			padding-left: 10rem;
+		}
 
-		padding-top: 3rem;
 		@media screen and (max-width: 768px) {
 			margin-top: 10rem;
 			flex-direction: column;
@@ -26,16 +32,33 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			z-index: 10;
 		}
 
 		.content {
 			z-index: 1;
-
+			margin-top: -20rem;
+			
 			@media screen and (max-width: 768px) {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				margin-right: 10rem;
+				margin-bottom: 10rem;
+				margin-top: -10rem;
+				z-index: 10;
+			}
+			@media screen and (max-width: 600px) {
+				margin-top: 10rem;
+				margin-bottom: 5rem;
+				@media screen and (min-height: 600px) {
+					margin-top: 10rem;
+					margin-bottom: 10rem;
+				}
+			}
+			@media screen and (max-width: 350px) {
+				margin-bottom: 2rem;
 			}
 
 			p {
@@ -43,25 +66,16 @@
 				color: $secondary-text-color;
 				text-shadow: $primary-text-shadow;
 				margin-bottom: 1.5rem;
-				@media screen and (max-width: 768px) {
-					font-size: 4rem;
-				}
 			}
 			h1 {
 				font-size: 10rem;
 				color: $primary-text-color;
 				text-shadow: $primary-text-shadow;
-				@media screen and (max-width: 768px) {
-					font-size: 14rem;
-				}
 
 				&.big {
 					font-size: 12rem;
 					margin-top: -1rem;
 					margin-bottom: 3rem;
-					@media screen and (max-width: 768px) {
-						font-size: 18rem;
-					}
 				}
 			}
 		}
@@ -73,8 +87,20 @@
 			background-repeat: no-repeat;
 			z-index: 10;
 			margin-top: 10rem;
+			margin-right: calc((100vw - 1200px);
+			@media screen and (max-width: 1350px) {
+				margin-right: 20rem;
+			}
 			@media screen and (max-width: 768px) {
 				margin-top: 10rem;
+				margin-right: 12rem;
+			}
+			@media screen and (max-width: 400px) {
+				margin-top: 0rem;
+				margin-right: 12rem;
+				@media screen and (min-height: 700px) {
+					margin-top: 30rem;
+				}
 			}
 		}
 	}

@@ -138,12 +138,18 @@ body {
 		font-size: 80%;
 	}
 	@media (max-width: 1400px) {
-		font-size: 50%;
+		font-size: 55%;
 	}
 	@media (max-width: 1000px) {
-		font-size: 40%;
+		font-size: 45%;
 	}
 	@media (max-width: 768px) {
+		font-size: 35%;
+	}
+	@media (max-width: 600px) {
 		font-size: 30%;
+	}
+	@media (max-width: 400px) {
+		font-size: 25%;
 	}
 }
