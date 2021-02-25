@@ -7,8 +7,7 @@
 	position: relative;
 
 	@media screen and (max-width: 1220px) {
-		padding: 0 10rem;
-		padding-bottom: 35rem;
+		padding: 0 10rem 30rem 10rem;
 	}
 	@media screen and (max-width: 768px) {
 		display: flex;
@@ -40,17 +39,15 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 30rem;
 		gap: 3rem 3rem;
-		grid-template-areas: "ztmProject project-2";
+		grid-template-areas: "ztmProject tp-portfolio";
 
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
-			grid-template-rows: repeat(4, 30rem);
+			grid-template-rows: repeat(2, 30rem);
 			width: 90%;
 			grid-template-areas:
 				"ztmProject"
-				"project-2"
-				"project-3"
-				"project-4";
+				"tp-portfolio";
 		}
 
 		.e-commerce-ztm {
@@ -70,7 +67,7 @@
 		.tp-portfolio {
 			height: 100%;
 			width: 100%;
-			grid-area: project-2;
+			grid-area: tp-portfolio;
 			background-image: url("../../assets/TPportfolio.png");
 			background-size: cover;
 			background-position: center;

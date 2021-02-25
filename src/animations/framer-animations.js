@@ -17,6 +17,46 @@ export const pageAnimation = {
     }    
 }
 
+export const fadeInOut = {
+  hidden: {
+    opacity: 0
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.7
+    }
+  }
+}
+
+export const fadeInLeft = {
+  hidden: {
+    opacity: 0,
+    x:30
+  },
+  show: {
+    opacity: 1,
+    x:0,
+    transition: {
+      duration: 0.7
+    }
+  }
+}
+
+export const fadeInRight = {
+  hidden: {
+    opacity: 0,
+    x:-30
+  },
+  show: {
+    opacity: 1,
+    x:0,
+    transition: {
+      duration: 0.7
+    }
+  }
+}
+
 export const heroTextContainer = {
     hidden: { opacity: 0 },
     show: {
@@ -24,6 +64,17 @@ export const heroTextContainer = {
       transition: {
         delayChildren: 0.75,
         staggerChildren: 0.3
+      }
+    }
+  }
+
+export const projectsContainer = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.6,
+        staggerChildren: 0.5
       }
     }
   }
@@ -92,6 +143,16 @@ export const leftLinksAnimations = {
     }
   }
 
+  export const techIconsContainer = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      }
+    }
+  }
+
 export const techIcons = {
     hidden: {
         opacity: 0,
@@ -99,7 +160,7 @@ export const techIcons = {
     show: {
       opacity: 1,
       transition: {
-        duration: 2
+        duration: 0.8
       }
     }
   }

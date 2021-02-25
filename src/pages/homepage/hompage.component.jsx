@@ -11,16 +11,19 @@ import Footer from '../../components/footer/footer.component';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../../animations/framer-animations'; 
 
-const HomePage = () => (
-    <div className='homepage' >
-        <motion.div className='content' variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
-            <HeroSection />
-            <AboutMe />
-            <ProjectsSection />
-            <ContactSection />
-        </motion.div>
-        <Footer/>
-    </div>
-)
+
+const HomePage = () => {
+    
+    return (
+        <div className='homepage' >
+            <motion.div className='content' variants={pageAnimation} initial='hidden' animate='show' exit='exit'/>
+                <HeroSection />
+                <AboutMe />
+                <ProjectsSection />
+                <ContactSection />
+            <Footer/>
+        </div>
+    )
+}
 
 export default HomePage;

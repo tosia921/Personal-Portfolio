@@ -29,7 +29,7 @@ const HeroSection = () => {
                     <motion.Link className='hero-section-button' to='/projects' variants={heroTextAnimation}>view projects</motion.Link>
                 </motion.div>
                 <HeroSectionWaveAnimationMobile/>
-                <motion.div className='my-photo' variants={heroImageAnimations}/>
+                <motion.div className='my-photo' variants={heroImageAnimations} initial="hidden" animate="show"/>
             </div>
             <HeroSectionWaveAnimation/>
             <HeroSectionWaveAnimation secondary/>

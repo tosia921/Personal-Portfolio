@@ -8,35 +8,37 @@ import SectionWave from '../section-wave/section-wave.component';
 import ProfficientWithArrow from '../profficient-with-arrow/profficient-with-arrow.component';
 //animations
 import { motion } from 'framer-motion';
-import { heroTextContainer } from '../../animations/framer-animations';
+import { techIconsContainer, fadeInOut } from '../../animations/framer-animations';
+import { useScroll } from '../../animations/useScroll';
 
 const AboutMe = () => {
+    const [element, controls] = useScroll();
     return (
         <section className='about-me'>
-                <div className='section-title'>
+                <motion.div className='section-title' variants={fadeInOut} initial="hidden" animate={controls} ref={element}>
                     <h2>About <span>Me</span></h2>
-                </div>
-            <div className='grids'>
-                <div className='grid-content-container'>
-                    <div className='content-area grid-area-2'>
+                </motion.div>
+            <motion.div className='grids'>
+                <motion.div className='grid-content-container' variants={techIconsContainer} initial="hidden" animate={controls} ref={element}>
+                    <motion.div className='content-area grid-area-2' variants={fadeInOut} >
                         <h3>Passionate</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-                    <div className='content-area grid-area-3'>
+                    </motion.div>
+                    <motion.div className='content-area grid-area-3' variants={fadeInOut} >
                         <h3>Hard working</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-                    <div className='content-area grid-area-4'>
+                    </motion.div>
+                    <motion.div className='content-area grid-area-4' variants={fadeInOut} >
                         <h3>Skilled</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-                    <div className='content-area grid-area-5'>
+                    </motion.div>
+                    <motion.div className='content-area grid-area-5' variants={fadeInOut} >
                         <h3>Fast Learner</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
                 
-                <motion.div className='grid-icons-container' variants={heroTextContainer} initial="hidden" animate="show">
+                <motion.div className='grid-icons-container' variants={techIconsContainer} initial="hidden" animate={controls} ref={element}>
                     <ProfficientWithArrow className='text-and-arrow'/>
                     <AnimatedReactIcon className='react-icon'/>
                     <AnimatedNpmIcon className='npm-icon'/>
@@ -49,7 +51,7 @@ const AboutMe = () => {
                     <AnimatedHtml5Icon className='html5-icon'/>
                 </motion.div>
                 
-            </div>
+            </motion.div>
             <SectionWave secondary/>
         </section>
     )

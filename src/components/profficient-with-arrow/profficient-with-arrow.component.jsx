@@ -1,12 +1,15 @@
 import React from 'react';
 import './profficient-with-arrow.styles.scss';
 import Arrow from '../../assets/arrow2.png';
+//animations
+import {motion} from 'framer-motion';
+import {fadeInLeft} from '../../animations/framer-animations';
 
 const ProfficientWithArrow = () => (
-    <div className='profficient-with-arrow'>
+    <motion.div className='profficient-with-arrow' variants={fadeInLeft}>
         <img src={Arrow} alt='arrow'/>    
         <p>Profficient With</p>
-    </div>
+    </motion.div>
 )
 
 export default ProfficientWithArrow;

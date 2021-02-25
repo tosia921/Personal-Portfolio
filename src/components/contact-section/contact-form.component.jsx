@@ -4,15 +4,19 @@ import './contact-form.styles.scss'
 import CustomButton from '../custom-button/custom-button.component';
 import useForm from './useForm';
 import validate from './validate-info';
+//animations
+import { motion } from 'framer-motion';
+import { techIconsContainer, fadeInOut } from '../../animations/framer-animations';
+import { useScroll } from '../../animations/useScroll';
 
 
 
 const ContactForm = ({ submitForm }) => {
-
+    const [element, controls] = useScroll();
     const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
 
     return (
-        <div className='form-container'>
+        <motion.div className='form-container' variants={fadeInOut} initial="hidden" animate={controls} ref={element}>
             <form className='form' onSubmit={handleSubmit}>
                 <div className='form-inputs'>
                     <label htmlFor='name' className='form-label'>
@@ -62,7 +66,7 @@ const ContactForm = ({ submitForm }) => {
                 </div>
                 <CustomButton text='Send' type='submit' />
             </form>
-        </div> 
+        </motion.div> 
     )
 }
 

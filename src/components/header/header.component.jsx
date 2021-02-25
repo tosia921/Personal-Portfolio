@@ -14,7 +14,7 @@ const Header = ({backgroundSecondary, backgroundPrimary}) => {
     const [showLinks, setShowLinks] = useState(false);
 
     return (
-        <motion.nav className={`${backgroundPrimary ? 'nav nav-background-primary' : 'nav'} ${backgroundSecondary ? 'nav nav-background-secondary' : 'nav'}`} variants={headerAnimations}>
+        <motion.nav className={`${backgroundPrimary ? 'nav nav-background-primary' : 'nav'} ${backgroundSecondary ? 'nav nav-background-secondary' : 'nav'}`} variants={headerAnimations} initial="hidden" animate="show">
             <div className='logo'>Portfo<span>lio.</span></div>
             <menu className='menu'>
                 <ul className={showLinks ? 'hidden' : ''}>
