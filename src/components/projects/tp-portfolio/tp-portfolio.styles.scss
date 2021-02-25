@@ -10,7 +10,7 @@
 	z-index: 600;
 }
 
-.project-ztm {
+.project-portfolio {
 	height: 70vh;
 	width: 85vw;
 	border: 2px solid rgba(254, 197, 118, 0.8);
@@ -24,8 +24,8 @@
 		height: 60vh;
 	}
 
-	.screenshot {
-		background-image: url(../../../assets/clommerceImage.png);
+	.screenshot-portfolio {
+		background-image: url(../../../assets/TPportfolio.png);
 		background-color: $dark-gray-color;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -112,8 +112,8 @@
 			}
 		}
 
-		.screenshot-mobile {
-			background-image: url(../../../assets/clommerceImage.png);
+		.screenshot-mobile-portfolio {
+			background-image: url(../../../assets/TPportfolio.png);
 			background-color: $dark-gray-color;
 			background-repeat: no-repeat;
 			background-position: center;

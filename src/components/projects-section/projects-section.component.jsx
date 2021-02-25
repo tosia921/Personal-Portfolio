@@ -5,11 +5,13 @@ import './projects-section.styles.scss';
 import SectionWave from '../section-wave/section-wave.component';
 //components
 import CustomButton from '../custom-button/custom-button.component';
-import ECommerceZTM from '../projects/e-commerce-ZTM/e-commerce-ZTM.component'
+import ECommerceZTM from '../projects/e-commerce-ZTM/e-commerce-ZTM.component';
+import TpPortfolio from '../projects/tp-portfolio/tp-portfolio.component';
 
 const ProjectsSection = () => {
 
     const [showZtmProject, setZtmProject] = useState(false);
+    const [showPortfolioProject, setPortfolioProject] = useState(false);
 
     return (
         <section className='projects-section'>
@@ -19,20 +21,13 @@ const ProjectsSection = () => {
                 <div className='e-commerce-ztm'>
                     <CustomButton text='View Project' eye onClick={() => setZtmProject(!showZtmProject)}/>
                 </div>
-                <div className='project-2'>
-                    <CustomButton text='View Project'/>
-                </div>
-                <div className='project-3'>
-                    <h1>tomek</h1>
-                    <CustomButton text='View Project'/>
-                </div>
-                <div className='project-4'>
-                    <h1>tomek</h1>
-                    <CustomButton text='View Project'/>
+                <div className='tp-portfolio'>
+                    <CustomButton text='View Project' eye onClick={() => setPortfolioProject(!showPortfolioProject)}/>
                 </div>
             </div>
 
             <ECommerceZTM showZtmProject={showZtmProject} setZtmProject={setZtmProject}/>
+            <TpPortfolio showPortfolioProject={showPortfolioProject} setPortfolioProject={setPortfolioProject}/>
 
             <SectionWave />
         </section>

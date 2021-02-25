@@ -30,7 +30,7 @@
 
 	p {
 		font-size: 2rem;
-		color: $dark-gray-color;
+		color: $light-gray-color;
 		text-shadow: $primary-text-shadow;
 	}
 
@@ -38,11 +38,9 @@
 		display: grid;
 		margin-top: 5rem;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 30rem 30rem;
+		grid-template-rows: 30rem;
 		gap: 3rem 3rem;
-		grid-template-areas:
-			"ztmProject project-2"
-			"project-3 project-4";
+		grid-template-areas: "ztmProject project-2";
 
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
@@ -69,11 +67,11 @@
 			border: 2px solid black;
 			box-shadow: 2px 2px 5px black;
 		}
-		.project-2 {
+		.tp-portfolio {
 			height: 100%;
 			width: 100%;
 			grid-area: project-2;
-			background-image: url("../../assets/clommerceAppPhoto.png");
+			background-image: url("../../assets/TPportfolio.png");
 			background-size: cover;
 			background-position: center;
 			display: flex;
@@ -82,31 +80,31 @@
 			border: 2px solid black;
 			box-shadow: 2px 2px 5px black;
 		}
-		.project-3 {
-			height: 100%;
-			width: 100%;
-			grid-area: project-3;
-			background-image: url("../../assets/clommerceAppPhoto.png");
-			background-size: cover;
-			background-position: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border: 2px solid black;
-			box-shadow: 2px 2px 5px black;
-		}
-		.project-4 {
-			height: 100%;
-			width: 100%;
-			grid-area: project-4;
-			background-image: url("../../assets/clommerceAppPhoto.png");
-			background-size: cover;
-			background-position: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border: 2px solid black;
-			box-shadow: 2px 2px 5px black;
-		}
+		// .project-3 {
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	grid-area: project-3;
+		// 	background-image: url("../../assets/clommerceAppPhoto.png");
+		// 	background-size: cover;
+		// 	background-position: center;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// 	border: 2px solid black;
+		// 	box-shadow: 2px 2px 5px black;
+		// }
+		// .project-4 {
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	grid-area: project-4;
+		// 	background-image: url("../../assets/clommerceAppPhoto.png");
+		// 	background-size: cover;
+		// 	background-position: center;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// 	border: 2px solid black;
+		// 	box-shadow: 2px 2px 5px black;
+		// }
 	}
 }

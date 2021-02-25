@@ -7,15 +7,18 @@ import AboutMe from '../../components/about-me/about-me.component';
 import ProjectsSection from '../../components/projects-section/projects-section.component';
 import ContactSection from '../../components/contact-section/contact-section.component';
 import Footer from '../../components/footer/footer.component';
+//animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../animations/framer-animations'; 
 
 const HomePage = () => (
-    <div className='homepage'>
-        <div className='content'>
+    <div className='homepage' >
+        <motion.div className='content' variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
             <HeroSection />
             <AboutMe />
             <ProjectsSection />
             <ContactSection />
-        </div>
+        </motion.div>
         <Footer/>
     </div>
 )

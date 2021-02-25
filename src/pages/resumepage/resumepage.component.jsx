@@ -10,11 +10,14 @@ import SectionWave from '../../components/section-wave/section-wave.component';
 import GithubLink from '../../components/github-link/github-link.component';
 import LinkedInLink from '../../components/linkedin-link/linkedin-link.component';
 import ResumeLink from '../../components/resume-link/resume-link.component';
+//animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../animations/framer-animations'; 
 
 const ResumePage = () => {
     return (
         <>
-        <section className='resume-page'>
+        <motion.section className='resume-page' variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
             <div>
                 <Header backgroundSecondary/>
                 <ResumePdf/>
@@ -25,7 +28,7 @@ const ResumePage = () => {
                 </div>
             </div>
             <SectionWave secondary/>
-        </section>
+        </motion.section>
         <Footer/>
         </>
     )

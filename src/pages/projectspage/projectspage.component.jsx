@@ -9,10 +9,14 @@ import ProjectsSection from '../../components/projects-section/projects-section.
 import GithubLink from '../../components/github-link/github-link.component';
 import LinkedInLink from '../../components/linkedin-link/linkedin-link.component';
 import ResumeLink from '../../components/resume-link/resume-link.component';
+//animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../../animations/framer-animations'; 
+
 
 const ProjectsPage = () => {
     return (
-        <section className='projects-page'>
+        <motion.section className='projects-page' variants={pageAnimation} initial='hidden' animate='show' exit='exit'>
             <div>
                 <Header backgroundPrimary/>
                 <div className='fixed-links-projects-page'>
@@ -23,7 +27,7 @@ const ProjectsPage = () => {
                 <ProjectsSection/>
             </div>
             <Footer backgroundSecondary/>
-        </section>
+        </motion.section>
     )
 }
 

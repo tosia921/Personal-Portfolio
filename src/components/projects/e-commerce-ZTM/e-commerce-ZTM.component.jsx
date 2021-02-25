@@ -1,8 +1,6 @@
 import React from 'react';
 //styles
 import './e-commerce-ZTM.styles.scss';
-//router dom
-import { Link } from 'react-router-dom';
 
 //svg
 import xIcon from '../../../assets/xIcon.svg';
