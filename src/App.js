@@ -6,6 +6,7 @@ import HomePage from './pages/homepage/hompage.component';
 import ProjectsPage from './pages/projectspage/projectspage.component';
 import AboutMePage from './pages/aboutmepage/aboutmepage.component';
 import ContactMePage from './pages/contactpage/contactmepage.component';
+import ResumePage from './pages/resumepage/resumepage.component';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <ContactMePage/>
+        </Route>
+        <Route path="/resume">
+          <ResumePage/>
         </Route>
       </Switch>
     </Router>

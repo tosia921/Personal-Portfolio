@@ -5,7 +5,7 @@ import { ReactComponent as ResumeIcon } from '../../assets/ResumeIcon.svg';
 
 const ResumeLink = ({hoverRight}) => {
     return (
-            <Link className='resume-link-wrapper' to={{pathname: 'https://www.linkedin.com/in/tomasz-posiada%C5%82a-3a05391b0/' }} target="_blank" >
+            <Link className='resume-link-wrapper' to='/resume'>
                 <div className={`${hoverRight ? 'resume-link-container hover-right' : 'resume-link-container'}`}>
                     <p className='resume-link-content'>Resume</p>
                     <ResumeIcon className='resume-logo'/>

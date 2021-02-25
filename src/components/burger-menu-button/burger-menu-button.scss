@@ -1,16 +1,19 @@
 @import "../../global-styles/variables.scss";
 
 .burger {
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	padding: 10px;
 	border: 3px solid $secondary-text-color;
 	border-radius: 100%;
 	display: none;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	z-index: 5;
+	z-index: 2000;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 	cursor: pointer;
 
 	@media screen and (max-width: 768px) {
@@ -18,14 +21,14 @@
 	}
 
 	.open:first-child {
-		transform: rotate(45deg) translate(3px, 4px);
+		transform: rotate(135deg) translate(4px, -4px);
 	}
 	.open:nth-child(2) {
 		transform: translateX(20px);
 		opacity: 0;
 	}
 	.open:nth-child(3) {
-		transform: rotate(-45deg) translate(1px, -4px);
+		transform: rotate(-135deg) translate(3.5px, 4.5px);
 	}
 	.close:first-child {
 		transform: rotate(0) translateY(0);
@@ -43,8 +46,10 @@
 	}
 	.burger-span {
 		width: 100%;
-		height: 0.4rem;
+		height: 1.5px;
+		border-radius: 5px;
 		background-color: $primary-text-color;
 		transition: all 0.3s ease-in;
+		margin: 2px 0;
 	}
 }

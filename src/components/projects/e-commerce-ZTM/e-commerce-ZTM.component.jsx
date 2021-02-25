@@ -37,6 +37,7 @@ const ECommerceZTM = ({showZtmProject, setZtmProject}) => {
                         <img src={xIcon} alt='exit icon'/>
                     </div>
                     <h2 className='project-title'><span>C</span>lommerce</h2>
+                    <div className='screenshot-mobile'></div>
                     <div className='tech-stack'>
                         <TechNameBox text={'html'} />
                         <TechNameBox text={'css'} />
@@ -52,6 +53,7 @@ const ECommerceZTM = ({showZtmProject, setZtmProject}) => {
                         <CustomButton code isLink LinkTo='https://github.com/tosia921/e-commerce-ZTM-Course' text={'code'}/>
                     </div>
                 </div>
+                
             </motion.div>
         </motion.div>
         }
