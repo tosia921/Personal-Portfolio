@@ -6,6 +6,9 @@ import { AnimatedReactIcon, AnimatedNpmIcon, AnimatedGatsbyIcon, AnimatedGitHubI
 //components
 import SectionWave from '../section-wave/section-wave.component';
 import ProfficientWithArrow from '../profficient-with-arrow/profficient-with-arrow.component';
+//animations
+import { motion } from 'framer-motion';
+import { heroTextContainer } from '../../animations/framer-animations';
 
 const AboutMe = () => {
     return (
@@ -33,7 +36,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 
-                <div className='grid-icons-container'>
+                <motion.div className='grid-icons-container' variants={heroTextContainer} initial="hidden" animate="show">
                     <ProfficientWithArrow className='text-and-arrow'/>
                     <AnimatedReactIcon className='react-icon'/>
                     <AnimatedNpmIcon className='npm-icon'/>
@@ -44,7 +47,7 @@ const AboutMe = () => {
                     <AnimatedSassIcon className='sass-icon'/>
                     <AnimatedCss3Icon className='css3-icon'/>
                     <AnimatedHtml5Icon className='html5-icon'/>
-                </div>
+                </motion.div>
                 
             </div>
             <SectionWave secondary/>

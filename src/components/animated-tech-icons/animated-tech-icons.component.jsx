@@ -11,86 +11,90 @@ import SassIcon from '../../assets/SassLogo.svg';
 import Css3Icon from '../../assets/Css3Icon.svg';
 import Html5Icon from '../../assets/Html5Icon.svg';
 
-import CircleThick from '../../assets/Circle.svg'
+//animations
+import { motion } from 'framer-motion';
+import { techIcons } from '../../animations/framer-animations';
+
+import CircleThick from '../../assets/Circle.svg';
 
 export const AnimatedReactIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={ReactIcon} alt='React Logo' className='icon-inside' />
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedNpmIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={NpmIcon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedGatsbyIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={GatsbyIcon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedGitHubIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={GitHubIcon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedGitIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={GitIcon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedJavaScriptIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={JavascriptIcon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedSassIcon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={SassIcon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedCss3Icon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img  src={Css3Icon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 
 export const AnimatedHtml5Icon = () => {
     return (
-        <div className='circle-container'>
+        <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={Html5Icon} alt='React Logo' className='icon-inside'/>
-        </div>
+        </motion.div>
     )
 }
 

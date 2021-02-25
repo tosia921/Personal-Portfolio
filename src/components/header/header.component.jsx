@@ -3,15 +3,18 @@ import React, { useState } from 'react';
 import './header.styles.scss';
 //react router dom
 import { NavLink } from 'react-router-dom';
-
+//custom components
 import BurgerMenuButton from '../burger-menu-button/burger-menu-button.component';
+//animations
+import { motion } from 'framer-motion';
+import { headerAnimations } from '../../animations/framer-animations';
 
 const Header = ({backgroundSecondary, backgroundPrimary}) => {
 
     const [showLinks, setShowLinks] = useState(false);
 
     return (
-        <nav className={`${backgroundPrimary ? 'nav nav-background-primary' : 'nav'} ${backgroundSecondary ? 'nav nav-background-secondary' : 'nav'}`}>
+        <motion.nav className={`${backgroundPrimary ? 'nav nav-background-primary' : 'nav'} ${backgroundSecondary ? 'nav nav-background-secondary' : 'nav'}`} variants={headerAnimations}>
             <div className='logo'>Portfo<span>lio.</span></div>
             <menu className='menu'>
                 <ul className={showLinks ? 'hidden' : ''}>
@@ -22,7 +25,7 @@ const Header = ({backgroundSecondary, backgroundPrimary}) => {
                 </ul>
             </menu>
             <BurgerMenuButton setshowLinks={setShowLinks} showLinks={showLinks}/>
-        </nav>
+        </motion.nav>
     )
 }
 
