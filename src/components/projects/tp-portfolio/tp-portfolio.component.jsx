@@ -36,8 +36,8 @@ const TpPortfolio = ({showPortfolioProject, setPortfolioProject}) => {
                     <h2 className='project-title'><span>P</span>ersonal Portfolio</h2>
                     <div className='screenshot-mobile-portfolio'></div>
                     <div className='tech-stack'>
-                        <TechNameBox text={'html'} />
-                        <TechNameBox text={'css'} />
+                        <TechNameBox text={'html5'} />
+                        <TechNameBox text={'scss'} />
                         <TechNameBox text={'react'} />
                         <TechNameBox text={'React Router Dom'} />
                         <TechNameBox text={'Framer Motion'} />

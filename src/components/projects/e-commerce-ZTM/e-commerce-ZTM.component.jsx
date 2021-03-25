@@ -37,8 +37,8 @@ const ECommerceZTM = ({showZtmProject, setZtmProject}) => {
                     <h2 className='project-title'><span>C</span>lommerce</h2>
                     <div className='screenshot-mobile'></div>
                     <div className='tech-stack'>
-                        <TechNameBox text={'html'} />
-                        <TechNameBox text={'css'} />
+                        <TechNameBox text={'html5'} />
+                        <TechNameBox text={'scss'} />
                         <TechNameBox text={'react'} />
                         <TechNameBox text={'redux'} />
                         <TechNameBox text={'redux thunk'} />

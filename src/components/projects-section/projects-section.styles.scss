@@ -37,17 +37,20 @@
 		display: grid;
 		margin-top: 5rem;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 30rem;
+		grid-template-rows: 30rem 30rem;
 		gap: 3rem 3rem;
-		grid-template-areas: "ztmProject tp-portfolio";
+		grid-template-areas:
+			"ztmProject tp-portfolio"
+			"todo-app .";
 
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
-			grid-template-rows: repeat(2, 30rem);
+			grid-template-rows: repeat(3, 30rem);
 			width: 90%;
 			grid-template-areas:
 				"ztmProject"
-				"tp-portfolio";
+				"tp-portfolio"
+				"todo-app";
 		}
 
 		.e-commerce-ztm {
@@ -69,6 +72,19 @@
 			width: 100%;
 			grid-area: tp-portfolio;
 			background-image: url("../../assets/TPportfolio.png");
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid black;
+			box-shadow: 2px 2px 5px black;
+		}
+		.todo-app {
+			height: 100%;
+			width: 100%;
+			grid-area: todo-app;
+			background-image: url("../../assets/TodoAppScreenshot.png");
 			background-size: cover;
 			background-position: center;
 			display: flex;

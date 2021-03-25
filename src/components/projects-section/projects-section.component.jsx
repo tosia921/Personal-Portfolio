@@ -7,6 +7,7 @@ import SectionWave from '../section-wave/section-wave.component';
 import CustomButton from '../custom-button/custom-button.component';
 import ECommerceZTM from '../projects/e-commerce-ZTM/e-commerce-ZTM.component';
 import TpPortfolio from '../projects/tp-portfolio/tp-portfolio.component';
+import TodoApp from '../projects/toto-app/todo-app.component';
 //animations
 import { motion } from 'framer-motion';
 import { projectsContainer, fadeInOut } from '../../animations/framer-animations';
@@ -16,6 +17,7 @@ const ProjectsSection = () => {
 
     const [showZtmProject, setZtmProject] = useState(false);
     const [showPortfolioProject, setPortfolioProject] = useState(false);
+    const [showTodoProject, setTodoProject] = useState(false);
     const [element, controls] = useScroll();
 
     return (
@@ -29,10 +31,14 @@ const ProjectsSection = () => {
                 <motion.div className='tp-portfolio' variants={fadeInOut}>
                     <CustomButton text='View Project' eye onClick={() => setPortfolioProject(!showPortfolioProject)}/>
                 </motion.div>
+                <motion.div className='todo-app' variants={fadeInOut}>
+                    <CustomButton text='View Project' eye onClick={() => setTodoProject(!showTodoProject)}/>
+                </motion.div>
             </motion.div>
 
             <ECommerceZTM showZtmProject={showZtmProject} setZtmProject={setZtmProject}/>
             <TpPortfolio showPortfolioProject={showPortfolioProject} setPortfolioProject={setPortfolioProject}/>
+            <TodoApp showTodoProject={showTodoProject} setTodoProject={setTodoProject}/>
 
             <SectionWave />
         </section>
