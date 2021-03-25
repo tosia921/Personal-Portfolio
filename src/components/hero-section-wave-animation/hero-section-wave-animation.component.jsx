@@ -3,7 +3,7 @@ import './hero-section-wave-animation.styles.scss';
 
 import { motion } from 'framer-motion';
 
-export const HeroSectionWaveAnimation = ({secondary,}) => {
+export const HeroSectionWaveAnimation = ({secondary}) => {
     return (
         secondary ?
         (<svg className='wave-svg-hero-section-secondary' xmlns="http://www.w3.org/2000/svg" width="1268.156" height="700.388" viewBox="0 0 1268.156 700.388">
@@ -18,7 +18,7 @@ export const HeroSectionWaveAnimation = ({secondary,}) => {
                 stroke="#fec576" 
                 stroke-width="10"/>
         </svg>)
-        :
+        : 
         (<svg className='wave-svg-hero-section-primary' xmlns="http://www.w3.org/2000/svg" width="3134.076" height="1207.213" viewBox="0 0 3134.076 1207.213">
             <motion.path
                 initial={{pathLength: 0, pathOffset: 1, opacity: 0}}
@@ -30,7 +30,7 @@ export const HeroSectionWaveAnimation = ({secondary,}) => {
                 fill="none" stroke="#fec576" 
                 stroke-width="12"/>
         </svg>)
-    )
+    ) 
 }
 
 export const HeroSectionWaveAnimationMobile = () => {
