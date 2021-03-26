@@ -42,7 +42,7 @@ const TodoApp = ({ showTodoProject, setTodoProject }) => {
                         <TechNameBox text={'Redux Toolkit'} />
                         <TechNameBox text={'Redux Persist'} />
                     </div>
-                    <p className='project-description'>This one is a small React Redux application to practice new Redux Toolkit way of setting up global state in our React Applications. Really like the aproach to reduce Redux boilerplate and keep all Redux logic - reducers, actions, selectors in one file thanks to 'CreateSlice' method. To learn more about this project go to github repository ReadMe file!</p>
+                    <p className='project-description'>This one is a small React Redux application to practice new Redux Toolkit way of setting up global state in React Applications. Really like the aproach to reduce Redux boilerplate and keep all the logic - reducers, actions, selectors in one file thanks to 'CreateSlice' method. To learn more about this project go to github repository ReadMe file!</p>
                     <div className='project-details-buttons'>
                         <CustomButton eye isLink LinkTo='https://605c95298ab4281cbf24ea5e--inspiring-heisenberg-41fe40.netlify.app/' text={'demo'}/>
                         <CustomButton code isLink LinkTo='https://github.com/tosia921/todo-react-reduxtoolkit' text={'code'}/>
