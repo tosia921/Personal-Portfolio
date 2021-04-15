@@ -45,7 +45,7 @@ const HeroSection = () => {
             <LinkedInLink hoverRight variants={leftLinksAnimations}/>
             <ResumeLink hoverRight variants={leftLinksAnimations}/>
         </motion.div>
-        <SectionWave/>
+        <SectionWave className='section-wave-hero'/>
         </section>
     )
 }
