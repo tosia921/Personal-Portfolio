@@ -1,123 +1,137 @@
 @import "../../global-styles/variables.scss";
 
 .projects-section {
-	height: fit-content;
-	padding: 5rem calc((100vw - 1200px) / 2) 35rem;
-	background-color: $primary-background-color;
-	position: relative;
+  height: fit-content;
+  padding: 5rem calc((100vw - 1200px) / 2) 35rem;
+  background-color: $primary-background-color;
+  position: relative;
 
-	@media screen and (max-width: 1220px) {
-		padding: 0 10rem 30rem 10rem;
-	}
-	@media screen and (max-width: 768px) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  @media screen and (max-width: 1220px) {
+    padding: 0 10rem 30rem 10rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	h2 {
-		font-size: 5rem;
-		color: $primary-text-color;
-		text-shadow: $primary-text-shadow;
-		margin-bottom: 1rem;
+  h2 {
+    font-size: 5rem;
+    color: $primary-text-color;
+    text-shadow: $primary-text-shadow;
+    margin-bottom: 1rem;
 
-		span {
-			color: $secondary-text-color;
-		}
-	}
+    span {
+      color: $secondary-text-color;
+    }
+  }
 
-	p {
-		font-size: 2rem;
-		color: $light-gray-color;
-		text-shadow: $primary-text-shadow;
-	}
+  p {
+    font-size: 2rem;
+    color: $light-gray-color;
+    text-shadow: $primary-text-shadow;
+  }
 
-	.grid-container {
-		display: grid;
-		margin-top: 5rem;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 30rem 30rem;
-		gap: 3rem 3rem;
-		grid-template-areas:
-			"ztmProject tp-portfolio"
-			"todo-app .";
+  .grid-container {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30rem 30rem;
+    gap: 3rem 3rem;
+    grid-template-areas:
+      "github-api tp-portfolio"
+      "todo-app ztmProject";
 
-		@media screen and (max-width: 768px) {
-			grid-template-columns: 1fr;
-			grid-template-rows: repeat(3, 30rem);
-			width: 90%;
-			grid-template-areas:
-				"ztmProject"
-				"tp-portfolio"
-				"todo-app";
-		}
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 30rem);
+      width: 90%;
+      grid-template-areas:
+        "github-api"
+        "tp-portfolio"
+        "todo-app"
+        "ztmProject";
+    }
 
-		.e-commerce-ztm {
-			height: 100%;
-			width: 100%;
-			grid-area: ztmProject;
-			background-image: url("../../assets/clommerceAppPhoto.png");
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border: 2px solid black;
-			box-shadow: 2px 2px 5px black;
-		}
-		.tp-portfolio {
-			height: 100%;
-			width: 100%;
-			grid-area: tp-portfolio;
-			background-image: url("../../assets/TPportfolio.png");
-			background-size: cover;
-			background-position: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border: 2px solid black;
-			box-shadow: 2px 2px 5px black;
-		}
-		.todo-app {
-			height: 100%;
-			width: 100%;
-			grid-area: todo-app;
-			background-image: url("../../assets/TodoAppScreenshot.png");
-			background-size: cover;
-			background-position: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			border: 2px solid black;
-			box-shadow: 2px 2px 5px black;
-		}
-		// .project-3 {
-		// 	height: 100%;
-		// 	width: 100%;
-		// 	grid-area: project-3;
-		// 	background-image: url("../../assets/clommerceAppPhoto.png");
-		// 	background-size: cover;
-		// 	background-position: center;
-		// 	display: flex;
-		// 	align-items: center;
-		// 	justify-content: center;
-		// 	border: 2px solid black;
-		// 	box-shadow: 2px 2px 5px black;
-		// }
-		// .project-4 {
-		// 	height: 100%;
-		// 	width: 100%;
-		// 	grid-area: project-4;
-		// 	background-image: url("../../assets/clommerceAppPhoto.png");
-		// 	background-size: cover;
-		// 	background-position: center;
-		// 	display: flex;
-		// 	align-items: center;
-		// 	justify-content: center;
-		// 	border: 2px solid black;
-		// 	box-shadow: 2px 2px 5px black;
-		// }
-	}
+    .e-commerce-ztm {
+      height: 100%;
+      width: 100%;
+      grid-area: ztmProject;
+      background-image: url("../../assets/clommerceAppPhoto.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      box-shadow: 2px 2px 5px black;
+    }
+    .tp-portfolio {
+      height: 100%;
+      width: 100%;
+      grid-area: tp-portfolio;
+      background-image: url("../../assets/TPportfolio.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      box-shadow: 2px 2px 5px black;
+    }
+    .todo-app {
+      height: 100%;
+      width: 100%;
+      grid-area: todo-app;
+      background-image: url("../../assets/TodoAppScreenshot.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      box-shadow: 2px 2px 5px black;
+    }
+    .github-jobs-api {
+      height: 100%;
+      width: 100%;
+      grid-area: github-api;
+      background-image: url("../../assets/GitHubJobsScreenshot.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid black;
+      box-shadow: 2px 2px 5px black;
+    }
+    // .project-3 {
+    // 	height: 100%;
+    // 	width: 100%;
+    // 	grid-area: project-3;
+    // 	background-image: url("../../assets/clommerceAppPhoto.png");
+    // 	background-size: cover;
+    // 	background-position: center;
+    // 	display: flex;
+    // 	align-items: center;
+    // 	justify-content: center;
+    // 	border: 2px solid black;
+    // 	box-shadow: 2px 2px 5px black;
+    // }
+    // .project-4 {
+    // 	height: 100%;
+    // 	width: 100%;
+    // 	grid-area: project-4;
+    // 	background-image: url("../../assets/clommerceAppPhoto.png");
+    // 	background-size: cover;
+    // 	background-position: center;
+    // 	display: flex;
+    // 	align-items: center;
+    // 	justify-content: center;
+    // 	border: 2px solid black;
+    // 	box-shadow: 2px 2px 5px black;
+    // }
+  }
 }
