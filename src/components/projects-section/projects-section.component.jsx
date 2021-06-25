@@ -9,6 +9,7 @@ import ECommerceZTM from '../projects/e-commerce-ZTM/e-commerce-ZTM.component';
 import TpPortfolio from '../projects/tp-portfolio/tp-portfolio.component';
 import TodoApp from '../projects/toto-app/todo-app.component';
 import GithubJobsApi from '../projects/github-jobs-api/github-jobs-api.component'
+import Photosnap from '../projects/Photosnap-website/photosnap';
 //animations
 import { motion } from 'framer-motion';
 import { projectsContainer, fadeInOut } from '../../animations/framer-animations';
@@ -17,7 +18,7 @@ import { useScroll } from '../../animations/useScroll';
 const ProjectsSection = () => {
 
     const [showZtmProject, setZtmProject] = useState(false);
-    const [showPortfolioProject, setPortfolioProject] = useState(false);
+    const [showPhotosnapProject, setPhotosnapProject] = useState(false);
     const [showTodoProject, setTodoProject] = useState(false);
     const [showGitHubJobsApi, setGitHubJobsApi] = useState(false);
     const [element, controls] = useScroll();
@@ -27,22 +28,26 @@ const ProjectsSection = () => {
             <motion.h2 variants={fadeInOut} initial="hidden" animate={controls} ref={element}><span>P</span>rojects</motion.h2>
             <motion.p variants={fadeInOut} initial="hidden" animate={controls} ref={element}>These are my favorite projects I've worked on for the past year. Have a look around!</motion.p>
             <motion.div className='grid-container' variants={projectsContainer} initial="hidden" animate={controls} ref={element}>
-                <motion.div className='github-jobs-api' variants={fadeInOut}>
-                    <CustomButton text='View Project' eye onClick={() => setGitHubJobsApi(!showGitHubJobsApi)}/>
-                </motion.div>
-                <motion.div className='tp-portfolio' variants={fadeInOut}>
-                    <CustomButton text='View Project' eye onClick={() => setPortfolioProject(!showPortfolioProject)}/>
+                <motion.div className='photosnap' variants={fadeInOut}>
+                    <p className='preview-title'>PhotoSnap - Gatsby Website</p>
+                    <CustomButton text='View Project' eye onClick={() => setPhotosnapProject(!showPhotosnapProject)}/>
                 </motion.div>
                 <motion.div className='todo-app' variants={fadeInOut}>
+                    <p className='preview-title'>ToDo App - React, Redux Toolkit</p>
                     <CustomButton text='View Project' eye onClick={() => setTodoProject(!showTodoProject)}/>
                 </motion.div>
+                <motion.div className='github-jobs-api' variants={fadeInOut}>
+                    <p className='preview-title'>GitHub Jobs App</p>
+                    <CustomButton text='View Project' eye onClick={() => setGitHubJobsApi(!showGitHubJobsApi)}/>
+                </motion.div>
                 <motion.div className='e-commerce-ztm' variants={fadeInOut}>
+                    <p className='preview-title'>Clommerce - React Ecommerce</p>
                     <CustomButton text='View Project' eye onClick={() => setZtmProject(!showZtmProject)}/>
                 </motion.div>
             </motion.div>
 
             <ECommerceZTM showZtmProject={showZtmProject} setZtmProject={setZtmProject}/>
-            <TpPortfolio showPortfolioProject={showPortfolioProject} setPortfolioProject={setPortfolioProject}/>
+            <Photosnap showPhotosnapProject={showPhotosnapProject} setPhotosnapProject={setPhotosnapProject}/>
             <TodoApp showTodoProject={showTodoProject} setTodoProject={setTodoProject}/>
             <GithubJobsApi showGitHubJobsApi={showGitHubJobsApi} setGitHubJobsApi={setGitHubJobsApi}/>
 

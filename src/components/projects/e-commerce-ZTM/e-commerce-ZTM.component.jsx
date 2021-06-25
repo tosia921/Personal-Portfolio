@@ -34,7 +34,7 @@ const ECommerceZTM = ({showZtmProject, setZtmProject}) => {
                     <div className='x-button' onClick={() => setZtmProject(false)}>
                         <img src={xIcon} alt='exit icon'/>
                     </div>
-                    <h2 className='project-title'><span>C</span>lommerce</h2>
+                    <h2 className='project-title'><span>C</span>lommerce - React Ecommerce</h2>
                     <div className='screenshot-mobile'></div>
                     <div className='tech-stack'>
                         <TechNameBox text={'html5'} />
