@@ -45,7 +45,8 @@ const GithubJobsApi = ({showGitHubJobsApi, setGitHubJobsApi}) => {
                         <TechNameBox text={'react router dom'} />
                         <TechNameBox text={'react markdown'} />
                     </div>
-                    <p className='project-description'>This is a Github Jobs Api Application design by Frontendmentor.io as a challenge and completly developed by myself. It filters and displays all available Github jobs and navigates to jobs description page when clicking on each job title.</p>
+                    <p className='project-description'>This is a Github Jobs Api Application design by Frontendmentor.io as a challenge. It filters and displays all available Github jobs and navigates to jobs description page when clicking on each job title.</p>
+                    <p className='project-description'>Unfortunately the GitHub Jobs API is getting deprecated, and it's no longer possible to experience its funcionality.</p>
                     <div className='project-details-buttons'>
                             <CustomButton eye isLink LinkTo='https://unruffled-joliot-4a7262.netlify.app/' text={'demo'}/>
                         <CustomButton code isLink LinkTo='https://github.com/tosia921/github-jobs-app' text={'code'}/>

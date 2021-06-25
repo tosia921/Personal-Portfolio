@@ -10,6 +10,7 @@ import JavascriptIcon from '../../assets/javascriptLogo.svg';
 import SassIcon from '../../assets/SassLogo.svg';
 import Css3Icon from '../../assets/Css3Icon.svg';
 import Html5Icon from '../../assets/Html5Icon.svg';
+import NextJSLogo from '../../assets/next-js.svg';
 
 //animations
 import { motion } from 'framer-motion';
@@ -22,6 +23,7 @@ export const AnimatedReactIcon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={ReactIcon} alt='React Logo' className='icon-inside' />
+            <p>REACT JS</p>
         </motion.div>
     )
 }
@@ -30,7 +32,17 @@ export const AnimatedNpmIcon = () => {
     return (
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
-            <img src={NpmIcon} alt='React Logo' className='icon-inside'/>
+            <img src={NpmIcon} alt='Npm Logo' className='icon-inside'/>
+            <p>NPM</p>
+        </motion.div>
+    )
+}
+export const AnimatedNextIcon = () => {
+    return (
+        <motion.div className='circle-container' variants={techIcons}>
+            <img src={CircleThick} alt='Animated Cicle' className='circle'/>
+            <img src={NextJSLogo} alt='React Logo' className='icon-inside'/>
+            <p>Next JS</p>
         </motion.div>
     )
 }
@@ -40,6 +52,7 @@ export const AnimatedGatsbyIcon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={GatsbyIcon} alt='React Logo' className='icon-inside'/>
+            <p>Gatsby JS</p>
         </motion.div>
     )
 }
@@ -49,6 +62,7 @@ export const AnimatedGitHubIcon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={GitHubIcon} alt='React Logo' className='icon-inside'/>
+            <p>GitHub</p>
         </motion.div>
     )
 }
@@ -58,6 +72,7 @@ export const AnimatedGitIcon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={GitIcon} alt='React Logo' className='icon-inside'/>
+            <p>Git</p>
         </motion.div>
     )
 }
@@ -67,6 +82,7 @@ export const AnimatedJavaScriptIcon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={JavascriptIcon} alt='React Logo' className='icon-inside'/>
+            <p>JavaScript</p>
         </motion.div>
     )
 }
@@ -76,6 +92,7 @@ export const AnimatedSassIcon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={SassIcon} alt='React Logo' className='icon-inside'/>
+            <p>Sass</p>
         </motion.div>
     )
 }
@@ -85,6 +102,7 @@ export const AnimatedCss3Icon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img  src={Css3Icon} alt='React Logo' className='icon-inside'/>
+            <p>Css 3</p>
         </motion.div>
     )
 }
@@ -94,6 +112,7 @@ export const AnimatedHtml5Icon = () => {
         <motion.div className='circle-container' variants={techIcons}>
             <img src={CircleThick} alt='Animated Cicle' className='circle'/>
             <img src={Html5Icon} alt='React Logo' className='icon-inside'/>
+            <p>Html 5</p>
         </motion.div>
     )
 }

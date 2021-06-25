@@ -6,7 +6,7 @@ import useForm from './useForm';
 import validate from './validate-info';
 //animations
 import { motion } from 'framer-motion';
-import { techIconsContainer, fadeInOut } from '../../animations/framer-animations';
+import { fadeInOut } from '../../animations/framer-animations';
 import { useScroll } from '../../animations/useScroll';
 
 

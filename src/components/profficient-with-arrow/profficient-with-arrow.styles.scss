@@ -2,7 +2,9 @@
 
 .profficient-with-arrow {
 	display: flex;
-	position: relative;
+	position: absolute;
+	top: 75px;
+	right: 0;
 	grid-area: text-and-arrow;
 	justify-self: right;
 	@media screen and (max-width: 768px) {
