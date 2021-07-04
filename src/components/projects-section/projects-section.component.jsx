@@ -6,7 +6,7 @@ import SectionWave from '../section-wave/section-wave.component';
 //components
 import CustomButton from '../custom-button/custom-button.component';
 import ECommerceZTM from '../projects/e-commerce-ZTM/e-commerce-ZTM.component';
-import TpPortfolio from '../projects/tp-portfolio/tp-portfolio.component';
+import LekawaPhotography from '../projects/lekawa-photography/lekawa-photography.component';
 import TodoApp from '../projects/toto-app/todo-app.component';
 import GithubJobsApi from '../projects/github-jobs-api/github-jobs-api.component'
 import Photosnap from '../projects/Photosnap-website/photosnap';
@@ -19,6 +19,7 @@ const ProjectsSection = () => {
 
     const [showZtmProject, setZtmProject] = useState(false);
     const [showPhotosnapProject, setPhotosnapProject] = useState(false);
+    const [showLekawaPhotography, setLekawaPhotography] = useState(false);
     const [showTodoProject, setTodoProject] = useState(false);
     const [showGitHubJobsApi, setGitHubJobsApi] = useState(false);
     const [element, controls] = useScroll();
@@ -28,6 +29,10 @@ const ProjectsSection = () => {
             <motion.h2 variants={fadeInOut} initial="hidden" animate={controls} ref={element}><span>P</span>rojects</motion.h2>
             <motion.p variants={fadeInOut} initial="hidden" animate={controls} ref={element}>These are my favorite projects I've worked on for the past year. Have a look around!</motion.p>
             <motion.div className='grid-container' variants={projectsContainer} initial="hidden" animate={controls} ref={element}>
+                <motion.div className='lekawa' variants={fadeInOut}>
+                    <p className='preview-title'>Photographer Website</p>
+                    <CustomButton text='View Project' eye onClick={() => setLekawaPhotography(!showLekawaPhotography)}/>
+                </motion.div>
                 <motion.div className='photosnap' variants={fadeInOut}>
                     <p className='preview-title'>PhotoSnap - Gatsby Website</p>
                     <CustomButton text='View Project' eye onClick={() => setPhotosnapProject(!showPhotosnapProject)}/>
@@ -50,6 +55,7 @@ const ProjectsSection = () => {
             <Photosnap showPhotosnapProject={showPhotosnapProject} setPhotosnapProject={setPhotosnapProject}/>
             <TodoApp showTodoProject={showTodoProject} setTodoProject={setTodoProject}/>
             <GithubJobsApi showGitHubJobsApi={showGitHubJobsApi} setGitHubJobsApi={setGitHubJobsApi}/>
+            <LekawaPhotography showLekawaPhotography={showLekawaPhotography} setLekawaPhotography={setLekawaPhotography}/>
 
             <SectionWave />
         </section>
