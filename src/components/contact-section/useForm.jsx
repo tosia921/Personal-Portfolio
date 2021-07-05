@@ -1,6 +1,7 @@
 //Custom hook that handles form submit
 
 import { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 const useForm = (callback, validate) => {
     const[values, setValues] = useState({
@@ -21,11 +22,18 @@ const useForm = (callback, validate) => {
         })
     }
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         setErrors(validate(values));
         setIsSubmitting(true);
+
+        emailjs.sendForm('service_1l4l8lj', 'template_abtjyck', e.target, 'user_x9ISuXKhT8DwfJq5dpgDk')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                 console.log(error.text);
+            });
     }
 
     useEffect(
