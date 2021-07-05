@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './resume-pdf.styles.scss';
 //pdf file
-import ExamplePdf from '../../assets/feelance guide pdf.pdf';
+import Resume from '../../assets/resume.pdf';
 //react-pdf
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -23,7 +23,7 @@ const ResumePdf = () => {
     return (
         <section className='resume-pdf'>
             <div className='pdf-container' ref={pdfWrapperRef}>
-                <Document className="custom-class-name-1" file={ExamplePdf} onLoadSuccess={onDocumentLoadSuccess}>
+                <Document className="custom-class-name-1" file={Resume} onLoadSuccess={onDocumentLoadSuccess}>
                     <Page pageNumber={pageNumber} width={(pdfWrapperRef.current?.getBoundingClientRect().width) || undefined}/>
                 </Document>
             </div>

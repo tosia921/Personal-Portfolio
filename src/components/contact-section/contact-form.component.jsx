@@ -17,7 +17,7 @@ const ContactForm = ({ submitForm }) => {
 
     return (
         <motion.div className='form-container' variants={fadeInOut} initial="hidden" animate={controls} ref={element}>
-            <form className='form' onSubmit={handleSubmit}>
+            <form className='form' onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
                 <div className='form-inputs'>
                     <label htmlFor='name' className='form-label'>
                         Name
