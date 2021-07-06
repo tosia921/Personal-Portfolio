@@ -13,7 +13,9 @@ import Photosnap from '../projects/Photosnap-website/photosnap';
 //animations
 import { motion } from 'framer-motion';
 import { projectsContainer, fadeInOut } from '../../animations/framer-animations';
-import { useScroll } from '../../animations/useScroll';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
+//import { useScroll } from '../../animations/useScroll';
 
 const ProjectsSection = () => {
 
@@ -22,7 +24,17 @@ const ProjectsSection = () => {
     const [showLekawaPhotography, setLekawaPhotography] = useState(false);
     const [showTodoProject, setTodoProject] = useState(false);
     const [showGitHubJobsApi, setGitHubJobsApi] = useState(false);
-    const [element, controls] = useScroll();
+    //const [element, controls] = useScroll();
+
+
+    const controls = useAnimation();
+    const [element, view] = useInView({threshold: 0.3})
+
+    if (view) {
+        controls.start("show");
+    } 
+    
+
 
     return (
         <section className='projects-section'>
