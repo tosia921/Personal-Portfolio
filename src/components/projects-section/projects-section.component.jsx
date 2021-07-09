@@ -13,7 +13,10 @@ import Photosnap from '../projects/Photosnap-website/photosnap';
 //animations
 import { motion } from 'framer-motion';
 import { projectsContainer, fadeInOut } from '../../animations/framer-animations';
-import { useScroll } from '../../animations/useScroll';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from 'framer-motion';
+import Woodjoiners from '../projects/woodjoiners/woodjoiners.component';
+//import { useScroll } from '../../animations/useScroll';
 
 const ProjectsSection = () => {
 
@@ -22,7 +25,18 @@ const ProjectsSection = () => {
     const [showLekawaPhotography, setLekawaPhotography] = useState(false);
     const [showTodoProject, setTodoProject] = useState(false);
     const [showGitHubJobsApi, setGitHubJobsApi] = useState(false);
-    const [element, controls] = useScroll();
+    const [showWoodjoiners, setWoodjoiners] = useState(false);
+    //const [element, controls] = useScroll();
+
+
+    const controls = useAnimation();
+    const [element, view] = useInView({threshold: 0.3})
+
+    if (view) {
+        controls.start("show");
+    } 
+    
+
 
     return (
         <section className='projects-section'>
@@ -36,6 +50,10 @@ const ProjectsSection = () => {
                 <motion.div className='photosnap' variants={fadeInOut}>
                     <p className='preview-title'>PhotoSnap - Gatsby Website</p>
                     <CustomButton text='View Project' eye onClick={() => setPhotosnapProject(!showPhotosnapProject)}/>
+                </motion.div>
+                <motion.div className='wood-joiners' variants={fadeInOut}>
+                    <p className='preview-title'>WoodJoiners - Gatsby website</p>
+                    <CustomButton text='View Project' eye onClick={() => setWoodjoiners(!showWoodjoiners)}/>
                 </motion.div>
                 <motion.div className='todo-app' variants={fadeInOut}>
                     <p className='preview-title'>ToDo App - React, Redux Toolkit</p>
@@ -56,6 +74,7 @@ const ProjectsSection = () => {
             <TodoApp showTodoProject={showTodoProject} setTodoProject={setTodoProject}/>
             <GithubJobsApi showGitHubJobsApi={showGitHubJobsApi} setGitHubJobsApi={setGitHubJobsApi}/>
             <LekawaPhotography showLekawaPhotography={showLekawaPhotography} setLekawaPhotography={setLekawaPhotography}/>
+            <Woodjoiners showWoodjoiners={showWoodjoiners} setWoodjoiners={setWoodjoiners}/>
 
             <SectionWave />
         </section>

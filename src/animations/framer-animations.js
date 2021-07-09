@@ -73,8 +73,8 @@ export const projectsContainer = {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.6,
-        staggerChildren: 0.5
+        delayChildren: 0.5,
+        staggerChildren: 0.4
       }
     }
   }
