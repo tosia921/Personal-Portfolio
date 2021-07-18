@@ -21,7 +21,7 @@ const AboutMe = () => {
             <motion.div className='grids'>
                 <motion.div className='content-text' variants={techIconsContainer} initial="hidden" animate={controls} ref={element}>
                     <motion.div className='content-area grid-area-2' variants={fadeInOut} >
-                        <p>Hello! My name is Tomasz and I am a self-thought front-end developer based in central Scotland. I love helping businesses and individuals make their online presence a smooth and visually appealing experience. When I am not coding or learning new technologies I enjoy playing piano and spend quality time with my family.</p>
+                        <p>Hello! My name is Tomasz and I am a self-taught front-end developer based in central Scotland. I love helping businesses and individuals make their online presence a smooth and visually appealing experience. When I am not coding or learning new technologies I enjoy playing piano and spend quality time with my family.</p>
                     </motion.div>
                 </motion.div>
                 <ProfficientWithArrow className='text-and-arrow'/>
