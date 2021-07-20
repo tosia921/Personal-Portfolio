@@ -8,7 +8,7 @@ import {fadeInLeft} from '../../animations/framer-animations';
 const ProfficientWithArrow = () => (
     <motion.div className='profficient-with-arrow' variants={fadeInLeft}>
         <img src={Arrow} alt='arrow'/>    
-        <p>Profficient With</p>
+        <p>Proficient With</p>
     </motion.div>
 )
 
